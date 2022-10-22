@@ -1,0 +1,49 @@
+﻿body {
+    font-size: 16px;
+    background: #495C70;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+    color: white;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.form-group select{
+    width: 100%;
+	margin: 0 0 3px;
+	padding: 10px 15px;
+	font-size: 20px;
+	color: #000;
+	border-radius: 5px;
+	background: #d3d1d1;
+	border: 1px solid transparent
+}
+
+.error{
+    font-weight: 700;
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+
+*::-webkit-input-placeholder {
+    opacity: 1;
+    color: inherit;
+  }
+  
+  *,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
