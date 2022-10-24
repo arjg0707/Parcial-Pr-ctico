@@ -17,9 +17,9 @@ def curriculum():
     phone=request.form.get("phone")
     nationality=request.form.get("nationality")
     level=request.form.get("level")
-    language=request.form.get("language")
+    language=request.form.getlist("language")
     aptitudes=request.form.get("aptitudes")
-    skills=request.form.get("skills")
+    skills=request.form.getlist("skills")
     profile=request.form.get("profile")
     
     return render_template("form.html", name_=name, date_=date, occupation_=occupation, email_=email, phone_=phone, nationality_=nationality, level_=level, language_=language, aptitudes_=aptitudes, skills_=skills, profile_=profile)
