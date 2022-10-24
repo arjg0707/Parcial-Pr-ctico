@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>cv_form</title>
@@ -32,36 +32,33 @@
                 <p class="p3">Inglés: {{level_}}</p>
                 <p class="p3">Francés: Intermedio (B2)</p>
 
+                <input type="text"><button id = "more_languages" onclick="addItem(this)">+</button>
+
                 <br>
                 <p class="head">APTITUDES</p>
                 <ul class="aptitudes">
                     <li><span>{{aptitudes_}}</span></li>
                 </ul>
+                <input type="text"><button id = "more_aptitudes" onclick="addItem(this)">+</button>
+
 
                 <br>
                 <p class="head">HABILIDADES</p>
                 <ul class="habilidades">
-                    {% if skills_[0] %}
-                        <li><span>{{skills_[0]}}</span></li>
-                    {%endif %}
-                    {% if skills_[1] %}
-                        <li><span>{{skills_[1]}}</span></li>
-                    {%endif %}
-                    {% if skills_[2] %}
-                        <li><span>{{skills_[2]}}</span></li>
-                    {%endif %}
-                    {% if skills_[3] %}
-                        <li><span>{{skills_[3]}}</span></li>
-                    {%endif %}             
+                    {% for item in skills_ %}
+                        <li><span>{{item}}</span></li>
+                    {% endfor %}           
 
                 </ul>
+                <input type="text"><button id = "more_skills" onclick="addItem(this)">+</button>
+
 
                 <br>
                 <p class="head">OTROS INTERESES</p>
                 <ul class="otrosintereses">
-                    <li><span>{{language_}}</span></li>
- 
-
+                    {% for item in language_ %}
+                        <li><span>{{item}}</span></li>
+                    {% endfor %}
                 </ul>
 
             </div>
@@ -120,3 +117,4 @@
     <br>
 </body>
 </html>
+
